@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Junction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">Food Junction</h2>
+    <nav>
+        <a href="orders.html">Orders</a>
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <button id="cartBtn" class="cart-btn">
+    🛒 Cart (<span id="cart-count">0</span>)
+</button>
+
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1 class="brand-name">FOOD JUNCTION</h1>
+        <h3>Assam's Favorite Casual Cafe</h3>
+        <p>Tea • Biryani • Momos • Chicken • Snacks • Cold Drinks</p>
+        <button id="exploreBtn">Explore Menu</button>
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+
+    <h2>Our Menu</h2>
+
+    <div class="categories">
+        <button data-category="tea">Tea & Coffee</button>
+        <button data-category="biryani">Biryani</button>
+        <button data-category="momo">Momos</button>
+        <button data-category="chicken">Chicken</button>
+        <button data-category="snacks">Snacks</button>
+        <button data-category="drinks">Cold Drinks</button>
+    </div>
+
+    <div id="menu-items" class="menu-items"></div>
+
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Barpeta Town, Assam</p>
+    <p>+91 6000586270</p>
+</section>
+
+<div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+
+        <div class="checkout-form">
+    <input type="text" id="custName" placeholder="Your Name" required>
+    <input type="text" id="custPhone" placeholder="Phone Number" required>
+    <textarea id="custAddress" placeholder="Delivery Address" required></textarea>
+</div>
+
+
+        <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+        <button id="checkoutBtn" class="checkout-btn">Proceed to Payment</button>
+        <button id="closeCart" class="close-btn">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
